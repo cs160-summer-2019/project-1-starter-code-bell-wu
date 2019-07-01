@@ -202,3 +202,11 @@ h6 {
   margin: 0;
   font-size: 14px;
 }
+
+.ohno {
+  font-size: 100px;
+  font-weight: bold;
+  color: red;
+  transform: translate(20px, 0);
+  margin-bottom: -103px;
+}
