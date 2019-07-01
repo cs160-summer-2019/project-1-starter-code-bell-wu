@@ -1,15 +1,120 @@
-{% load static %}
+<!-- {% load static %} -->
 
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Comparison - Alert!</title>
 	
-	<link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
-	<link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
+	<link rel="stylesheet" type="text/css" href="../../static/weather/css/style.css" />
+  
+ <!-- <link rel="stylesheet" href="../../static/weather/vendors/css/normalize.css" type="text/css"> -->
+  
 </head>
 <body>
-	<!-- your comparison interface with alert here -->
+	<!-- your comparison interface here -->
+  <header class="header" style="border:1px solid #cecece;">
+    MY CITIES
+  </header>
+  
+  <div class="main-city container" style="border:1px solid #cecece;">
+    <div class="row justify-content-center" style="text-align: center;">
+      <div class="col-6">
+        <p class="top">HOME</p>
+        <img src="../../static/weather/images/partlycloudy.png" style="width: 180px;">
+        <br>
+        PARTLY CLOUDY
+        <br>
+        RAIN: <samp>0%</samp>
+        <br>
+        HUMIDITY: <samp>88%</samp>
+      </div>
+      <div class="col-6">
+        <p class="top">BERKELEY</p>
+        <div class="temperature" style="height: 140px; line-height: 140px; padding-top: 10px;">
+          <h2>73</h2><h6 class="degree">&#8457;</h6>
+        </div>
+        <div class="time"><samp>3:24pm</samp></div>
+        <br>
+        SUNRISE: <samp>5:36am</samp>
+        <br>
+        SUNSET: <samp>8:37pm</samp>
+      </div>
+    </div>
+  </div>
+  
+  <div class="other-cities container" style="border:1px solid #cecece; max-height: 40vh; margin: 0;">
+      <div class="row justify-content-center" style="margin: 0;">
+        <div class="info-title card">
+          New York
+          <div class="col" style="padding: 0;">
+              <img src="../../static/weather/images/sunny.png" style="height: 68px; width: 68px; display: inline">
+            <h4 class="tile-text">80</h4>
+          </div>
+          
+        </div>
+        <div class="info-title card">
+		      <p style="padding: 0; margin: 0;">Sydney <b id="emergency" style="align-content: flex-end;">!</b></p>
+          <div class="col" style="padding: 0;">
+            <img src="../../static/weather/images/idk.png" style="height: 68px; width: 68px; display: inline">
+            <h4 class="tile-text">78&#8457;</h4>
+          </div>
+        </div>
+      </div>
+      
+        <div class="row justify-content-center" style="margin: 0;">
+          <div class="info-title card">
+		      <p style="padding: 0; margin: 0;">Taipei <b id="emergency" style="align-content: flex-end;">!</b></p>
+            <div class="col" style="padding: 0;">
+              <img src="../../static/weather/images/thunder.png" style="height: 68px; width: 68px; display: inline">
+              <h4 class="tile-text">93&#8457;</h4>
+            </div>
+          </div>
+          <div class="info-title card">
+            Add...
+            <p style="margin-top: -10px; font-size: 50px;  text-align: center; color: lightgray;">+</p>
+          </div>
+        </div>
+  
+        <div class="row justify-content-center" style="margin: 0;">
+          <div class="info-title card">
+          </div>
+          <div class="info-title card">
+          </div>
+        </div>
+    </div>
+  
+  
+  
+  <footer class="footer mt-auto">
+    <div class="container row footer">
+      <div class="col-3 menu">
+          <a href="./forecast-alert.html" style="color: black;">
+            <img src="../../static/weather/images/home.png" style="height: 24px; width: 24px;">        
+            Home
+          </a>
+        </div>
+      <div class="col-3 active menu">
+        <img src="../../static/weather/images/world.png" style="height: 24px; width: 24px;">
+        My Cities
+      </div>
+      <div class="col-3 menu">
+        <img src="../../static/weather/images/route.png" style="height: 24px; width: 24px;">
+        Routes
+      </div>
+      <div class="col-3 menu">
+        <img src="../../static/weather/images/settings.png" style="height: 24px; width: 24px;">
+        Settings
+      </div>
+    </div>
+  </footer>
+  
 </body>
 </html>

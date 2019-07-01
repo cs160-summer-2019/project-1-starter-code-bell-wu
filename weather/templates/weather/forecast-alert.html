@@ -1,19 +1,198 @@
-{% load static %}
+<!-- {% load static %} -->
 
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Forecast - Alert!</title>
 	
-	<link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
-	<link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
+	<link rel="stylesheet" type="text/css" href="../../static/weather/css/style.css" />
+  
+ <!-- <link rel="stylesheet" href="../../static/weather/vendors/css/normalize.css" type="text/css"> -->
+  
 </head>
 <body>
-	<!-- your single-location forecast with alert interface here -->
+	<!-- your single-location forecast interface here -->
+	<div class="main row" style="border:1px solid #cecece;">
+			<div class="basic-info" style="background-color: #bad1f7;">
+				<div class="col-inner">
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+
+					<div class="search">
+						<form>
+							<input type="text" placeholder="Search" style="background-color: white; width: 280px; border: 0px; opacity: 20%;">
+							<!-- <button type="submit"><i class="fa fa-search"></i></button> -->
+						</form>
+					</div>
+					<div class="location">BERKELEY</div>
+					<div class="temp"><h3>73</h3>&#8457;</div>
+					<div class="temp-hl">59°/81°
+						<br>
+						<samp>3:24pm</samp>
+						<br>
+						<samp>June 23</samp>
+					</div>
+				</div>
+			</div>
+			<div class="hourly-forecast" style="background-color: #f7faff;">
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<div class="hour-card">
+						<samp>2PM</samp>
+						<img src="../../static/weather/images/partlycloudy.png" style="height: 75px; width: 75px; margin-top: -10px; margin-bottom:-10px;">
+						<code>76°</code>
+					</div>
+					<div class="hour-card">
+						<samp>NOW</samp>
+						<img src="../../static/weather/images/partlycloudy.png" style="height: 75px; width: 75px;">
+						<code>73°</code>
+					</div>
+					<div class="hour-card">
+						<samp>4PM</samp>
+						<img src="../../static/weather/images/partlycloudy.png" style="height: 75px; width: 75px;">
+						<code>74°</code>
+					</div>
+					<div class="hour-card">
+						<samp>5PM</samp>
+						<img src="../../static/weather/images/cloudy.png" style="height: 75px; width: 75px;">
+						<code>71°</code>
+					</div>
+					<div class="hour-card">
+						<samp>6PM</samp>
+						<img src="../../static/weather/images/cloudy.png" style="height: 75px; width: 75px;">
+						<code>70°</code>
+					</div>
+					<div class="hour-card">
+						<samp>7PM</samp>
+						<img src="../../static/weather/images/windy.png" style="height: 75px; width: 75px;">
+						<code>67°</code>
+					</div>
+					<div class="hour-card">
+						<samp>8PM</samp>
+						<img src="../../static/weather/images/windynight.png" style="height: 75px; width: 75px;">
+						<code>66°</code>
+					</div>
+					<div class="hour-card">
+						<samp>9PM</samp>
+						<img src="../../static/weather/images/windynight.png" style="height: 75px; width: 75px;">
+						<code>65°</code>
+					</div>
+					<div class="hour-card">
+						<samp>10PM</samp>
+						<img src="../../static/weather/images/windynight.png" style="height: 75px; width: 75px;">
+						<code>64°</code>
+					</div>
+		</div>
+			<div class="more-info" style="background-color: #bad1f7;">
+				<div class="col-inner">
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<div class="stuffs">
+						<img class="pic" src="../../static/weather/images/partlycloudy.png" style="height: 256px; width: 256px;">
+						<br>PARTLY CLOUDY
+					</div>
+					<div class="info-1">RAIN: <samp>0% &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5:36am/8:37pm</samp></div>
+					<div class="info-1">HUMIDITY: <samp>88% &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</samp>AQI: <samp>25</samp></div>
+				</div>
+			</div>
+	</div>
+
+	<div class="row week justify-content-center " style="border:1px solid #cecece; margin: 0;">
+		<div class="card weekly-forecast">
+			<img src="../../static/weather/images/sunny.png" style="height: 56px; width: 56px;">
+			<p class="week-hl">56°/78°</p>
+			MON
+		</div>
+		<div class="card weekly-forecast">
+			<img src="../../static/weather/images/partlycloudy.png" style="height: 56px; width: 56px;">
+			<p class="week-hl">54/68°</p>
+			TUE
+		</div>
+		<div class="card weekly-forecast">
+			<img src="../../static/weather/images/cloudy.png" style="height: 56px; width: 56px;">
+			<p class="week-hl">52°/75°</p>
+			WED
+		</div>
+		<div class="card weekly-forecast">
+			<img src="../../static/weather/images/cloudy.png" style="height: 56px; width: 56px;">
+			<p class="week-hl">51°/74</p>
+			THU
+		</div>
+		<div class="card weekly-forecast">
+			<img src="../../static/weather/images/rain.png" style="height: 56px; width: 56px;">
+			<p class="week-hl">53°/78°</p>
+			FRI
+		</div>
+		<div class="card weekly-forecast">
+			<img src="../../static/weather/images/partlycloudy.png" style="height: 56px; width: 56px;">
+			<p class="week-hl">55°/79°</p>
+			SAT
+		</div>
+		<div class="card weekly-forecast">
+			<img src="../../static/weather/images/sunny.png" style="height: 56px; width: 56px;">
+			<p class="week-hl">52°/82°</p>
+			SUN
+		</div>
+	</div>
+
+
+
+
+	<footer class="footer mt-auto">
+		<div class="container row footer">
+			<div class="col-3 active menu">
+				<img src="../../static/weather/images/home.png" style="height: 24px; width: 24px;">        
+				Home
+			</div>
+			<div class="col-3 menu">
+				<a href="./comparison.html" style="color: black;">
+				<img src="../../static/weather/images/world.png" style="height: 24px; width: 24px;">
+				My Cities
+				</a>
+			</div>
+			<div class="col-3 menu">
+				<img src="../../static/weather/images/route.png" style="height: 24px; width: 24px;">
+				Routes
+			</div>
+			<div class="col-3 menu">
+				<img src="../../static/weather/images/settings.png" style="height: 24px; width: 24px;">
+				Settings
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
-
 
 
 

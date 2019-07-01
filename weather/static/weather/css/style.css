@@ -15,16 +15,190 @@ li {
     margin-top: auto!important;
 }
 
-.py-3 {
-    padding-bottom: 1rem!important;
-    padding-top: 1rem!important;
-}
-
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 60px; /* Set the fixed height of the footer here */
+  height: 12vh; /* Set the fixed height of the footer here */
   line-height: 60px; /* Vertically center the text there */
-  background-color: #f5f5f5;
+  background-color: #f8f8f8;
+  padding: 0px;
+  font-size: 15px;
+  text-align: center;
+  line-height: 12vh;
+  margin: 0px;
+}
+
+.active {
+  background-color: #ffffff;
+}
+
+.header {
+  padding: 2px;
+  height: 8vh;
+  font-size: 36px;
+  padding-left: 8px;
+  background-color: #bad1f7;
+  color: white;
+}
+
+.main-city {
+  height: 40vh;
+  background-color: #f7faff;
+}
+
+.other-cities {
+  height: 40vh;
+  padding: 0;
+  padding-top: 5px;
+  max-height: 40vh;
+  overflow: auto!important;
+  background-image: linear-gradient(#cedbf0, #739ad9);
+}
+
+.info-title {
+  margin: 10px;
+  height: 110px;
+  width: 40%;
+  padding: 8px;
+}
+
+.menu {
+  height: 12vh;
+  padding: 0;
+  font-size: 13px;
+}
+
+h2 {
+  display: inline;
+  font-size: 120px;
+}
+
+h3 {
+  display: inline;
+  font-size: 100px;
+}
+
+h4 {
+  display: inline;
+  font-size: 25px;
+}
+
+h6 {
+  display: inline;
+  font-size: 20px;
+}
+
+.degree {
+  vertical-align: 250%;
+}
+
+.top {
+  margin: 0;
+  text-align: left;
+}
+
+.tile-text {
+  margin: 0;
+}
+
+#emergency {
+  text-align: right;
+  color: red;
+}
+
+.main {
+  /* height: 70vh; */
+  min-width: 215%;
+  height: 85vh;
+  margin: 0;
+  margin-top: -15vh;
+  margin-right: -20%;
+  margin-left:-10%;
+  
+  transform: rotate(43deg);
+}
+
+.col-inner {
+  transform: rotate(-43deg);
+}
+
+.basic-info {
+  width: 30%;
+  height: 1000px;
+}
+
+.hourly-forecast {
+  width: 12%;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.more-info {
+  width: 50%;
+}
+
+.search {
+  transform: translate(-49px, 12px);
+}
+
+.location {
+  margin-top:5px;
+  transform: translate(-49px, 10px);
+  font-size: 24px;
+}
+
+.temp {
+  font-size: 20px;
+  line-height: 40px;
+  transform: translate(-31px, 10px);
+}
+
+.temp-hl {
+  transform: translate(-40px, 15px);
+}
+
+.hour-card {
+  transform: rotate(-43deg);
+  width: 75px;
+  height: 80px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.hour-card img {
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+
+.stuffs {
+  transform: translate(-245px, 0px);
+  text-align: center;
+}
+
+.stuffs img {
+  margin-bottom: -38px;
+}
+
+.info-1, .info-2 {
+  transform: translate(-250px, 0px);
+}
+
+.week {
+  height: 18vh;
+  background-color: black;
+}
+
+.weekly-forecast {
+  width: 13%;
+  margin: 1px;
+  margin-top: 10px;
+  margin-right: 3px;
+  border: 0px;
+  text-align: center;
+}
+
+.week-hl {
+  margin: 0;
+  font-size: 14px;
 }

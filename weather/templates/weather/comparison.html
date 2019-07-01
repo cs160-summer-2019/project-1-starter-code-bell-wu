@@ -1,4 +1,4 @@
-{% load static %}
+<!-- {% load static %} -->
 
 <!DOCTYPE html>
 <html>
@@ -20,56 +20,103 @@
 </head>
 <body>
 	<!-- your comparison interface here -->
-  My Cities
+  <header class="header" style="border:1px solid #cecece;">
+    MY CITIES
+  </header>
   
   <div class="main-city container" style="border:1px solid #cecece;">
-    <div class="row">
+    <div class="row justify-content-center" style="text-align: center;">
       <div class="col-6">
-        Home
+        <p class="top">HOME</p>
+        <img src="../../static/weather/images/partlycloudy.png" style="width: 180px;">
         <br>
-        img
+        PARTLY CLOUDY
         <br>
-        Partly Cloudy
+        RAIN: <samp>0%</samp>
         <br>
-        Rain: 0%
-        <br>
-        Humidity: 88%
+        HUMIDITY: <samp>88%</samp>
       </div>
       <div class="col-6">
-        Berkeley
-        73
-        Partly Cloudy
-        Rain: 0%
-        Humidity: 88%
+        <p class="top">BERKELEY</p>
+        <div class="temperature" style="height: 140px; line-height: 140px; padding-top: 10px;">
+          <h2>73</h2><h6 class="degree">&#8457;</h6>
+        </div>
+        <div class="time"><samp>3:24pm</samp></div>
+        <br>
+        SUNRISE: <samp>5:36am</samp>
+        <br>
+        SUNSET: <samp>8:37pm</samp>
       </div>
     </div>
   </div>
   
-  <div class="other-cities container padding" style="border:1px solid #cecece;">
-    <div class="row">
-      <div class="col-6" style="border:1px solid #cecece;">
+  <div class="other-cities container" style="border:1px solid #cecece; max-height: 40vh; margin: 0;">
+    <div class="row justify-content-center" style="margin: 0;">
+      <div class="info-title card">
         New York
+        <div class="col" style="padding: 0;">
+            <img src="../../static/weather/images/sunny.png" style="height: 68px; width: 68px; display: inline">
+          <h4 class="tile-text">80&#8457;</h4>
+        </div>
+        
       </div>
-      <div class="col-6" style="border:1px solid #cecece;">
+      <div class="info-title card">
         Sydney
+        <div class="col" style="padding: 0;">
+          <img src="../../static/weather/images/windynight.png" style="height: 68px; width: 68px; display: inline">
+          <h4 class="tile-text">78&#8457;</h4>
+        </div>
       </div>
     </div>
     
-    <div class="row">
-      <div class="col-6" style="border:1px solid #cecece;">
-      Taipei
-    </div>
-    <div class="col-6" style="border:1px solid #cecece;">
-      Add...
-    </div>
-    </div>
+      <div class="row justify-content-center" style="margin: 0;">
+        <div class="info-title card">
+          Taipei
+          <div class="col" style="padding: 0;">
+            <img src="../../static/weather/images/darkcloudy.png" style="height: 68px; width: 68px; display: inline">
+            <h4 class="tile-text">88&#8457;</h4>
+          </div>
+        </div>
+        <div class="info-title card">
+          Add...
+          <p style="margin-top: -10px; font-size: 50px;  text-align: center; color: lightgray;">+</p>
+        </div>
+      </div>
+
+      <div class="row justify-content-center" style="margin: 0;">
+        <div class="info-title card">
+        </div>
+        <div class="info-title card">
+        </div>
+      </div>
   </div>
   
   
   
-  <footer class="footer mt-auto py-3">
-    <div class="container">
-      <span class="text-muted">Place sticky footer content here.</span>
+  <footer class="footer mt-auto">
+    <div class="container row footer">
+      <div class="col-3 menu">
+          <a href="./forecast.html" style="color: black;">
+          <!-- <figure>
+            <img src="../../static/weather/images/home.png" style="height: 24px; width: 24px;">        
+            <figcaption>Home</figcaption>
+          </figure> -->
+            <img src="../../static/weather/images/home.png" style="height: 24px; width: 24px;">        
+            Home
+          </a>
+        </div>
+      <div class="col-3 active menu">
+        <img src="../../static/weather/images/world.png" style="height: 24px; width: 24px;">
+        My Cities
+      </div>
+      <div class="col-3 menu">
+        <img src="../../static/weather/images/route.png" style="height: 24px; width: 24px;">
+        Routes
+      </div>
+      <div class="col-3 menu">
+        <img src="../../static/weather/images/settings.png" style="height: 24px; width: 24px;">
+        Settings
+      </div>
     </div>
   </footer>
   
